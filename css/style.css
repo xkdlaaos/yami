@@ -28,6 +28,21 @@ a { /* LoVe, HAte */
 .user {
     float:right;
 }
+#burger {
+    /*display:none;  */
+    position: absolute;
+    width:30px;
+    height:30px;
+    right:3%;
+}
+#burger.mobile span {
+    display:block;
+    background: #000;
+    height:5px;
+}
+#burger.mobile span:nth-child{
+    margin:5px 0;
+}
 #tnb li {
     display:inline-block;
     margin-left:15px;
@@ -90,13 +105,13 @@ a { /* LoVe, HAte */
     font-size:.825rem;
 }
 .lnb li a:hover {
-    color:gold; !important;
+    color:gold !important;
 }
 
 
 /* ===============slide =====================*/
-#silde {
-    height:200px;
+#slide {
+    height:400px;
     overflow: hidden;
     position: relative;
 }
@@ -105,12 +120,22 @@ a { /* LoVe, HAte */
     z-index:900;
     color:#fff;
     text-shadow: 0 0 5px #333;  /*글자 그림자 효과 */
-    left:45%;
+    left:50%;
     top:200px;
-    transform:translateX(-50%,);
+    transform:translateX(-50%);
+}
+.slogan h3 {
+    font-size:2.2rem;
+}
+.slogan h4 {
+    font-size:3rem;
+    font-weight:900;
 }
 .bx-wrapper {
     border:0;
+}
+.slider img {
+    height:400px;
 }
 /* ==================icons ====================*/
 #icons {
@@ -149,7 +174,7 @@ a { /* LoVe, HAte */
     overflow: hidden;
     border-radius:50%;
 }
-#main ul li:nth=child(2) {
+#main ul li:nth-child{
     margin:0 120px;
 }
 
@@ -174,6 +199,18 @@ a { /* LoVe, HAte */
 }
 .copyright {
     text-transform: capitalize;
+}
+.img_item {
+    width:100%;
+    justify-content: space-between;
+    flex-wrap:wrap;   
+    flex:1 1 auto;
+}
+.img_item li {
+    width:50%;
+}
+.img_item img {
+    width:100%;
 }
 
 

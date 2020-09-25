@@ -1,0 +1,54 @@
+/* ========= 반응형 웹 ==========*/
+@media screen and (max-width:375px) {
+    .logo {
+        float:none;
+        text-align:center;
+    }
+    .user {
+        display:none;
+    }
+    #burger {
+        display:block;
+        top:20px;
+    }
+    #gnb li {
+        margin:0;
+        padding:15px 0;
+        width:calc(100% / 4);   /* 계산함수 calc  */
+        text-align: center;
+    }
+    #slide {
+        height:200px;
+    }
+    .bx-wrapper {
+        height:200px;
+    }
+    .slider img {
+        height:200px;
+    }
+    .slogan h4 {
+        font-size:1.5rem;
+        font-weight:400;
+    }
+    #main ul {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        flex:1 1 auto;
+        margin:20px 0;
+    }
+    #main ul li {
+        float:none;
+        margin:0;
+        padding:0;
+        width:calc(100% /3);
+        height:auto;
+        border-radius:0;
+    }
+    #main ul li img {
+        width:100%;
+    }
+    #main ul li:nth-child(2) {
+        margin:0;
+    }
+}
